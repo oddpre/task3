@@ -1,0 +1,139 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-color: grey;
+}
+
+/* Header Stylings */
+h1, h2, h3 {
+    text-align: center;
+    color:orange;
+}
+h1 {
+    font-size: 2.5rem;
+    margin-top: 20px;
+}
+h2 {
+    font-size: 2rem;
+}
+h3 {
+    font-size: 1.5rem;
+    margin-bottom: 20px;
+}
+
+
+p {
+    text-align: center;
+    margin: 10px auto;
+    max-width: 700px;
+    color:orange;
+}
+
+.form {
+    color:orange;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    background-color: #16213e;
+    border-radius: 10px;
+    width: 90%;
+    max-width: 500px;
+    margin: 20px auto;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.5);
+}
+
+
+.option-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    width: 90%;
+    max-width: 400px;
+    margin: 20px auto;
+}
+
+.option-label {
+    margin-bottom: 15px;
+}
+
+select {
+    width: 100%;
+    padding: 10px;
+    font-size: 1rem;
+    color: orange;
+    background-color: grey;
+    border: 2px solid #00a8cc;
+    border-radius: 5px;
+    box-shadow: inset 0px 2px 4px rgba(0, 0, 0, 0.5);
+    transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+
+/* Labels and Inputs */
+label {
+    font-size: 1rem;
+    margin-bottom: 5px;
+    display: block;
+}
+
+input[type="text"] {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: none;
+    border-radius: 5px;
+    box-shadow: inset 0px 2px 4px rgba(0, 0, 0, 0.3);
+    background-color: #e3f6f5;
+    font-size: 1rem;
+    color: #0f4c75;
+}
+
+input[type="radio"], input[type="checkbox"] {
+    margin-right: 10px;
+    transform: scale(1.5); /* Makes it a bit easier to click. */
+}
+
+input:focus {
+    outline: none;
+    box-shadow: 0 0 5px #00a8cc;
+}
+
+/* Can modify css using hyper-specific cases like this */
+label[for="vanSitter"], label[for="breakerBox"],
+label[for="photoTaker"], label[for="huntVictim"] {
+    margin-left: 5px;
+    display: inline-block;
+    margin-bottom: 10px;
+    color:orange;
+}
+
+
+button {
+    padding: 10px 20px;
+    margin-top: 20px;
+    background-color: #00a8cc;
+    border: none;
+    border-radius: 5px;
+    color: white;
+    cursor: pointer;
+    font-size: 1rem;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #007b9e;
+}
+
+@media (max-width: 600px) {
+    h1, h2, h3 {
+        font-size: 1.5rem;
+    }
+    .form {
+        padding: 10px;
+    }
+}

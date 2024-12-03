@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<!--
+A form for signing up for Phasmophobia team, just a little continuation from Task 1 - the Phasmophobia site.
+As this is only a form, I don't feel like having scary design will be very beneficial as opposed to Task 1 which was an introduction to the game.
+-->
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Form</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <h1>Looking for Groups</h1>
+    <h2>On Phasmophobia?</h2>
+    <p>Do you have experience in chasing ghosts, or have you seen Supernatural?</p>
+    <h3>Apply Now for a Four man team, where everyone can have their each role of their own choosing, everyone must pick two different roles they want to play to make matchmaking more efficient.</h3>
+    <p>It is expected that everyone participate in finding evidences, e.g., the vanman will look for Ghost Orbs, D.O.T.s from the van and the others will do the rest of the evidences.</p>
+    <p>This is intended for players who seek other players</p>
+    <form action="" class="form">
+        <label for="firstName">First name: </label><br>
+        <input type="text" id="firstName" name="firstName" value="Kurt"><br>
+        <label for="lastName">Last name: </label><br>
+        <input type="text" id="lastName" name="lastName" value="Nilsen">
+        <br><br>
+        <p>Do you enjoy dying in games?</p> <!--This question is a joke, as I didn't know what else to fill in here, but you are likely to die a lot while checking for ghosts in Phasmophobia.-->
+        <input type="radio" id="yes" name="mortalityQuestion" value="Yes">
+        <label for="yes">Yes</label><br>
+        <input type="radio" id="no" name="mortalityQuestion" value="No">
+        <label for="no">No</label><br>
+        <div class="option-container">
+        <label for="days" class="option-label">What days in the week do you want to play?</label>
+        <select name="days" id="days">
+            <option value="monday">Monday</option>
+            <option value="tuesday">Tuesday</option>
+            <option value="wednesday">Wednesday</option>
+            <option value="thursday">Thursday</option>
+            <option value="friday">Friday</option>
+            <option value="saturday">Saturday</option>
+            <option value="sunday">Sunday</option>
+        </select></div>
+        <p>Choose your preferred role in a Ghost hunting scenario (Choose only 2 roles):</p>
+        <input type="checkbox" id="vanSitter" name="vanSitter" value="Sitting in the van">
+        <label for="vanSitter">I love sitting in the van</label>
+        <input type="checkbox" id="breakerBox" name="breakerBox" value="Turning on the breaker">
+        <label for="breakerBox">I turn on the breaker (and not the ghost) and look for the bone.</label>
+        <br>
+        <input type="checkbox" id="photoTaker" name="photoTaker" value="Taking pictures">
+        <label for="photoTaker">I enjoy taking pictures of ghost interactions and bone.</label>
+        <input type="checkbox" id="huntVictim" name="huntVictim" value="Being hunted.">
+        <label for="huntVictim">I enjoy having the ghost absolutely #!%&!$ me</label>
+        <br>
+        <br>
+        <button id="submitbutton" type="submit">Submit</button>
+
+
+    </form>
+    <script src="index.js"></script>
+</body>
+</html>
